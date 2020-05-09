@@ -1,0 +1,113 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url("background.png");
+    background-color: #ffffff;
+    font-family: 'Coda', cursive;
+   }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 1000;
+}
+.row{
+    text-align: center;
+}
+.card{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: #2e3d49;
+    cursor: pointer;
+}
+.card.done{
+    cursor: default;
+}
+.card.done:hover{
+    cursor: default;
+    box-shadow: none;
+}
+.card:hover{
+    box-shadow: inset 0px 0px 0px 1px black;
+    box-sizing: border-box;
+}
+.blue{
+    background-color: blue;
+}
+.pink{
+    background-color: pink;
+}
+.green{
+    background-color: green;
+}
+.yellow{
+    background-color: yellow;
+}
+.cyan{
+    background-color: cyan;
+}
+.purple{
+    background-color: purple;
+}
+.brown{
+    background-color: brown;
+}
+.orange{
+    background-color: orange;
+}
+.color-hide{
+    background-color: #2e3d49;
+}
+
+
+
+
+
+@media only screen and (max-width: 800px){
+    .row .card{
+      width: 75px;
+      height: 75px;
+      line-height: 75px;
+    }
+  
+    .row {
+      width: 500px;
+    }
+    h1{
+        text-align: center;
+    }
+}
+  
+@media only screen and (max-width: 450px){
+    .row .card{
+      width: 70px;
+      height: 70px;
+      line-height: 50px;
+    }
+  
+    .row {
+      width: 300px;
+    }
+}
